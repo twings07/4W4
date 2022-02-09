@@ -1,0 +1,67 @@
+.site__header {
+
+    display: flex;
+    flex-direction: column;
+    
+    @media screen and (min-width:$largeur__media-tablette) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__titre {
+
+        display: flex;
+        align-items: center;
+
+        h1 {
+            font-family: $font__header-h1;
+            font-size: clamp(1rem, 7vw, 8rem);
+            margin: 0;
+        }
+
+        h2 {
+            font-family: $font__header-h2;
+            font-size: clamp(1rem, .5vw, 5rem);
+        }
+    }
+
+    &__util {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+.icone {
+    display: flex;
+    justify-content: center;
+    &__lien {
+        
+        padding: 10px;
+    }
+}
+
+//--------------------------------------------recherche-------------------------------------------------
+.recherche {
+    display:flex;
+    position: relative;
+    align-items: center;
+    
+    &__input {
+        padding:0;
+        margin:0;
+    }
+
+    &__bouton {
+        position: absolute;
+        width: 29px;
+        height: 20px;
+        outline:none;
+        border:none;
+        padding:0;
+        margin:0;
+        
+
+    }
+}
