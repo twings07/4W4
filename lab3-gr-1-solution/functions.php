@@ -30,7 +30,11 @@ add_filter("wp_nav_menu_objects", "cidw_4w4_filtre_le_menu");
 // Code pour enregistrer le menu
 
 function cidw_4w4_enregistre_mon_menu() {
-  register_nav_menu( 'principal', __( 'Menu principal', 'cidw_4w4' ) );
+  register_nav_menus( array(
+    'principal' => __( 'Menu principal', 'cidw_4w4' ),
+    'footer' => esc_html__ ('Menu footer', 'cidw_4w4')
+    )
+  );
 }
 
 add_action( 'after_setup_theme', 'cidw_4w4_enregistre_mon_menu' );
