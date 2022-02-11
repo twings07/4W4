@@ -338,22 +338,22 @@ VARIABLES
 /* -------------------LAYOUT---------- */
 .site__header {
   grid-area: header;
-  background-color: #555;
+  background-color: #c00000;
 }
 
 .site__barre {
   grid-area: barre;
-  background-color: #742525;
+  background-color: #c57d7d;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #a82f2f;
+  background-color: #868686;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #382222;
+  background-color: black;
 }
 
 /*.site {
@@ -361,11 +361,17 @@ VARIABLES
    
 }*/
 .site {
-  background-color: #c57d7d;
+  background-color: #c00000;
   display: grid;
   gap: 10px;
   grid-template-columns: auto;
   grid-template-areas: "barre" "header" "main" "footer";
+}
+
+@media screen and (min-width: 600px) {
+  .site {
+    background-color: white;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -416,6 +422,7 @@ COMPOSANTS
 
 #chk-burger:checked ~ #burger {
   transform: rotate(90deg);
+  transition: 0.3s;
 }
 
 #chk-burger:checked ~ .menu-principal-container {
@@ -424,7 +431,7 @@ COMPOSANTS
 
 .menu-principal-container {
   display: none;
-  padding: 30px 0 0 0;
+  padding: 40px 0 0 0;
 }
 
 .menu-principal-container .menu {
@@ -474,22 +481,31 @@ COMPOSANTS
 .site__header__titre {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .site__header__titre h1 {
   font-family: "Poppins", sans-serif;
-  font-size: clamp(1rem, 7vw, 8rem);
+  font-size: clamp(0.5rem, 3vw, 7rem);
   margin: 0;
+  padding-right: 15px;
 }
 
 .site__header__titre h2 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: clamp(1rem, 0.5vw, 5rem);
+  font-size: clamp(0.8rem, 2.5vw, 5.5rem);
+  padding-right: 60px;
 }
 
 .site__header__util {
   display: flex;
   flex-direction: column;
+}
+
+.site__barre {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .icone {
@@ -502,19 +518,38 @@ COMPOSANTS
 }
 
 .recherche {
+  display: flex;
   position: relative;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.recherche__input {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.233);
+  border: none;
+  color: white;
 }
 
 .recherche__bouton {
   position: absolute;
-  width: 15px;
-  height: 15px;
+  right: 0;
+  width: 29px;
+  height: 20px;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.233);
+  border: none;
 }
 
 .site__main {
   display: flex;
   flex-wrap: wrap;
-  background-color: cadetblue;
   justify-content: space-evenly;
   row-gap: 20px;
 }
@@ -560,21 +595,53 @@ COMPOSANTS
 .site__footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .site__info {
-  color: whitesmoke;
+  color: white;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
 }
 
-.site__info2 {
+.site__info__adresse {
+  color: white;
+}
+
+.site__info__adresse p {
+  font-size: clamp(0.8rem, 1.2vw, 6rem);
+}
+
+.site__info__liens {
   display: flex;
   flex-direction: row;
+  text-decoration: none;
 }
 
-.site__info2__droit {
-  color: whitesmoke;
+.site__info__liens ul {
+  list-style: none;
+  font-size: clamp(0.8rem, 1.2vw, 6rem);
+}
+
+.site__info__lorem {
+  color: white;
+}
+
+.site__info__lorem p {
+  font-size: clamp(0.8rem, 1.2vw, 6rem);
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.copyright__maisonneuve, p {
+  font-size: clamp(0.8rem, 1.3vw, 6rem);
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */

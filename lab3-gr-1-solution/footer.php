@@ -19,36 +19,47 @@
          </section>
 
          <section class="site__info__liens">
-             <a href="" class="site__info__liens__a">Nouveau lien</a>
-             <a href="" class="site__info__liens__a">Nouveau lien</a>
-             <a href="" class="site__info__liens__a">Nouveau lien</a>
-             <a href="" class="site__info__liens__a">Nouveau lien</a>
-             <a href="" class="site__info__liens__a">Nouveau lien</a>
-             <a href="" class="site__info__liens__a">Nouveau lien</a>
-             <a href="" class="site__info__liens__a">Nouveau lien</a>
-         </section>
-
-         <section class="site__info__nouvelle">
-             <p>Lorem ipsum dolor sit amet consectetur</p>
-         </section>
-     </div>
-
-     <div class="site__info2">
-         <nav class="site__info2__menu">
-             <a href="#" class="site__info2__menu__a">Choix 1</a>
-             <a href="#" class="site__info2__menu__a">Choix 2</a>
-             <a href="#" class="site__info2__menu__a">Choix 3</a>
-             <a href="#" class="site__info2__menu__a">Choix 4</a>
-             <a href="#" class="site__info2__menu__a">Choix 5</a>
-         </nav>
-
-         <section class="site__info2__droit">
-             <p>Copyright 2022 - College de Maisonneuve.</p>
-             <?php  wp_nav_menu(array("menu" => "simple", 
+                         <?php  wp_nav_menu(array("menu" => "simple", 
                                         "container" => "nav")) ?>
          </section>
+
+         <section class="site__info__lorem">
+             <p>
+                Lorem ipsum dolor sit amet consectetur
+                <br>
+                Sed ut perspiciatis ? unde omnis iste
+                <br> 
+                natus error sit voluptatem accusantium 
+                <br>
+                eaque ipsa quae ab illo inventore veritatis
+                <br>
+                et quasi architecto beatae vitae dicta sunt 
+                <br>
+                explicabo. Nemo enim ipsam voluptatem
+                <br>
+                quia voluptas sit aspernatur aut 
+                <br>
+                odit aut fugit, sed quia
+                <br>
+                 consequuntur magni dolores eos qui 
+                 <br>
+                 ratione voluptatem sequi nesciunt.
+                 <br>
+                 Neque porro quisquam 
+             </p>
+         </section>
      </div>
+
+        
+         
+
+     </div>
+     <section class="copyright">
+         <div class="copyright__maisonneuve"></div>
+        <p>Copyright 2022 - College de Maisonneuve. Tous droit réservés</p>
+        </section>
      <?php wp_footer(); ?>
+     
 </body>
 </html>
 

@@ -1,22 +1,59 @@
-.site__footer{
+.site__footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 
 
-.site__info{
-    color: whitesmoke;
+.site__info {
+    color: $color__texte;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    
+    
+    width: 100%;
+
+    &__adresse {
+        color: $color__texte;
+        
+
+        p {
+            font-size: clamp(0.8rem, 1.2vw, 6rem);
+        }
+    }
+
+    &__liens {
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+
+        ul {
+            list-style: none;
+            font-size: clamp(0.8rem, 1.2vw, 6rem);
+        }
+    }
+
+    &__lorem {
+        color: $color__texte;
+
+        p {
+            font-size: clamp(0.8rem, 1.2vw, 6rem);
+        }
+    }
 }
 
-.site__info2{
+.copyright {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    
 }
 
-.site__info2__droit{
-    color: whitesmoke;
+.copyright__maisonneuve, p {
+    font-size: clamp(0.8rem, 1.3vw, 6rem);
+    display: flex;
+   
 }
