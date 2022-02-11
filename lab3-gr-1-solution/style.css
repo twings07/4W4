@@ -478,6 +478,14 @@ COMPOSANTS
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .site__header {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
 .site__header__titre {
   display: flex;
   align-items: center;
