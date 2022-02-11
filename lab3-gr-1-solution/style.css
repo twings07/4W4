@@ -601,6 +601,10 @@ COMPOSANTS
   color: #2f2f2f;
 }
 
+.carte__sigle {
+  color: #2f2f2f;
+}
+
 .site__footer {
   display: flex;
   flex-direction: row;
@@ -652,5 +656,6 @@ COMPOSANTS
 .copyright__maisonneuve, p {
   font-size: clamp(0.8rem, 1.3vw, 6rem);
   display: flex;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

@@ -15,8 +15,8 @@
 
             <section class="carte">
                 <h3 class="carte__titre"><?php echo $mon_titre_filtre; ?></h3>
-                <p class="carte_sigle"><?php echo $mon_sigle; ?></p>
-                <p class="carte_sigle">Durée du cours: <?php echo $ma_duree; ?></p>
+                <p class="carte__sigle"><?php echo $mon_sigle; ?></p>
+                <p class="carte__sigle">Durée du cours: <?php echo $ma_duree; ?></p>
                 <p class="carte__contenu"><?php echo get_the_excerpt(); ?></p>
             </section>     
         <?php endwhile ?>
