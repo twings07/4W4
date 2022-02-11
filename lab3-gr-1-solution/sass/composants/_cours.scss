@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     row-gap: 20px;
+    background-color: $color__background-main;
 }
 .main__titre {
     font-size: 2rem;
@@ -23,14 +24,14 @@
     }
 
     padding: 10px;
-    background-color: GhostWhite;
+    background-color: $color__background-main;
     border-radius: 25px;
 }
 .carte__titre {
     font-size: 1.5rem;
-    color: DimGrey;
+    color: $color__texte_titre;
 }
 .carte__contenu {
     font-size: 0.8rem;
-    color: DimGrey;
+    color: $color__texte_paragraphe;
 }

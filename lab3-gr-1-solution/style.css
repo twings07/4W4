@@ -348,7 +348,7 @@ VARIABLES
 
 .site__main {
   grid-area: main;
-  background-color: #868686;
+  background-color: #9b9b9b;
 }
 
 .site__footer {
@@ -552,6 +552,7 @@ COMPOSANTS
   flex-wrap: wrap;
   justify-content: space-evenly;
   row-gap: 20px;
+  background-color: #9b9b9b;
 }
 
 .main__titre {
@@ -566,7 +567,7 @@ COMPOSANTS
   border: 1px solid 1px;
   width: 100%;
   padding: 10px;
-  background-color: GhostWhite;
+  background-color: #9b9b9b;
   border-radius: 25px;
 }
 
@@ -584,12 +585,12 @@ COMPOSANTS
 
 .carte__titre {
   font-size: 1.5rem;
-  color: DimGrey;
+  color: #070707;
 }
 
 .carte__contenu {
   font-size: 0.8rem;
-  color: DimGrey;
+  color: #2f2f2f;
 }
 
 .site__footer {
