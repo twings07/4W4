@@ -16,6 +16,7 @@ VARIABLES
 /* ---------------- BACKGROUND */
 /* ---------------- LIENS */
 /* ---------------- LIENS FOOTER */
+/* ---------------- LIENS HEADER titre principal du site */
 /* ---------------- FONT */
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
@@ -385,13 +386,32 @@ a:hover, a:active {
   outline: 0;
 }
 
+.header__titre a {
+  color: #f06a6a;
+}
+
+.header__titre a:visited {
+  color: #7a49d4;
+}
+
+.header__titre a:hover, .header__titre a:focus, .header__titre a:active {
+  color: #8be58f;
+}
+
+.header__titre a:focus {
+  outline: thin dotted;
+}
+
+.header__titre a:hover, .header__titre a:active {
+  outline: 0;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
-.principal {
-  margin: 20px;
+.site__main {
   padding: 10px 15px;
-  background-color: #eca7a7;
+  background-color: #d5e6f1;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -403,7 +423,7 @@ COMPOSANTES
 
 .formation__titre {
   font-size: 2rem;
-  color: #443936;
+  color: #ebcac1;
   margin: 10px 0px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
@@ -414,7 +434,7 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #ffd6d1;
+  background-color: #d1e9ff;
   box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
@@ -438,7 +458,7 @@ COMPOSANTES
 
 .cours__titre {
   font-size: 1.5rem;
-  color: #443936;
+  color: #ebcac1;
   margin: 5px 0px;
 }
 
@@ -453,7 +473,7 @@ COMPOSANTES
 }
 
 .site__header {
-  background-color: #594036;
+  background-color: #6faee2;
   color: #fa9292;
   padding-left: 10px;
 }
@@ -463,7 +483,7 @@ COMPOSANTES
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.site__header .header__desc {
+.site__header .header__description {
   font-size: 1.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -501,11 +521,11 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #ffa3a3;
+  background-color: #8293e3;
 }
 
 .menu-item a:hover {
-  background-color: #ffd1d1;
+  background-color: #2832b8;
 }
 
 @media screen and (min-width: 800px) {
@@ -519,7 +539,7 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #2f2a28;
+  background-color: #07143b;
   padding: 15px;
 }
 
@@ -540,7 +560,11 @@ COMPOSANTES
 }
 
 .site__footer__menu__ul .menu-item a svg {
-  color: aqua;
+  color: #f40b0b;
+}
+
+.site__footer__menu__ul .menu-item a:hover svg {
+  color: #19e123;
 }
 
 .footer__titre,
@@ -551,38 +575,69 @@ COMPOSANTES
 }
 
 /* ---------------------------------------------------------
+ANIMATION
+--------------------------------------------------------- */
+.animation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.animation__bloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #1161f7;
+  color: #fff;
+  font-size: 3rem;
+  animation: anim-entete 1s forwards;
+}
+
+@keyframes anim-entete {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
 /*
 theme name: Lab 2 Lemieux Florence
 */
 .site {
-  background-color: #957365;
+  background-color: #dae0f1;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .site__header {
   grid-area: header;
-  background-color: #594036;
+  background-color: #6faee2;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #ff8585;
+  background-color: #051d29;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #eca7a7;
+  background-color: #d5e6f1;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #2f2a28;
+  background-color: #07143b;
 }
 
 .site {
   display: grid;
+  gap: 10px;
   grid-template-columns: auto;
   grid-template-areas: "sidebar" "header" "main" "footer";
 }
