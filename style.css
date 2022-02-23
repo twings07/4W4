@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
-theme name: lab-4 gr3 eddy martin
-Author: Eddy martin
-Author URI: https://github.com/eddytuto
+theme name: exercise 2 Edward Twingstan
+Author: Edward Twingstan
+Author URI: 
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -494,6 +494,10 @@ COMPOSANTES
   transform: rotate(0);
 }
 
+#chk-burger {
+  display: none;
+}
+
 #chk-burger:checked ~ #burger {
   transform: rotate(90deg);
 }
@@ -574,6 +578,22 @@ COMPOSANTES
   text-align: center;
 }
 
+.error-404 {
+  background-color: #f15c70;
+}
+
+.error-404 h1 {
+  font-size: 5rem;
+}
+
+.error-404 h2 {
+  font-size: 2rem;
+}
+
+.error-404 p {
+  font-size: 1rem;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
@@ -592,7 +612,26 @@ ANIMATION
   background-color: #1161f7;
   color: #fff;
   font-size: 3rem;
-  animation: anim-entete 1s forwards;
+}
+
+.animation__bloc:nth-of-type(1) {
+  animation: anim-entete 1s 0s forwards;
+}
+
+.animation__bloc:nth-of-type(2) {
+  animation: anim-entete 1s .25s forwards;
+}
+
+.animation__bloc:nth-of-type(3) {
+  animation: anim-entete 1s .5s forwards;
+}
+
+.animation__bloc:nth-of-type(4) {
+  animation: anim-entete 1s .75s forwards;
+}
+
+.animation__bloc:nth-of-type(5) {
+  animation: anim-entete 1s 1s forwards;
 }
 
 @keyframes anim-entete {
