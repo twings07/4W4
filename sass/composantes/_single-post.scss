@@ -1,11 +1,11 @@
 .cours {
     &__titre {
-        color: red;
+        color: $color_single_titre;
     }
 
     section {
-        img {}
-
-        p {}
+        p {
+            color: $color_single_p;
+        }
     }
 }

@@ -21,12 +21,14 @@
 .util {
   display: flex;
   flex-direction: column;
+  padding: 10px;
   font-size: clamp(0.3rem, 2.5vw, 1rem);
   
   &__menu {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding: 10px;
   }
   .svg{
     font-size: clamp(0.2rem, 2.5vw, 0.8rem);
