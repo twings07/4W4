@@ -1,7 +1,7 @@
 
 
 <form action="<?php echo get_home_url() ?>" class="recherche" method="get">
-    <input type="text" name="s" class="recherche__text" value="<?php get_search_query() ?>">
+    <input type="text" placeholder="Recherche..." name="s" class="recherche__text" value="<?php get_search_query() ?>">
     <button class="recherche__submit">
         <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
             color="rgb(0, 0, 0)">
