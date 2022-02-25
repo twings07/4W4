@@ -72,9 +72,7 @@
                     <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"></path>
                 </svg>
             </div>
-
             <?php get_search_form() ?>
-
         </div>
     </header>
 
