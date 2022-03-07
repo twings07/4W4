@@ -2,7 +2,7 @@
     <div class="site__footer__colonne">
         <section class="footer__adresse"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsum itaque, sequi beatae mollitia eveniet nesciunt recusandae dignissimos cupiditate officiis laboriosam numquam repudiandae, nisi, explicabo provident dicta aperiam aliquam perferendis. </section>
         <section class="footer__article"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsum itaque, sequi beatae mollitia eveniet nesciunt recusandae dignissimos cupiditate officiis laboriosam numquam repudiandae, nisi, explicabo provident dicta aperiam aliquam perferendis. </section>
-        <section class="footer__lien"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsum itaque, sequi beatae mollitia eveniet nesciunt recusandae dignissimos cupiditate officiis laboriosam numquam repudiandae, nisi, explicabo provident dicta aperiam aliquam perferendis. </section>
+        <section class="footer__lien"> <?php wp_nav_menu(array("menu"=>"Lien_externe",)); ?> </section>
     </div>
 
     <div class="site__footer__ligne">
@@ -15,8 +15,8 @@
              wp_nav_menu(array(
                     "menu"=>"simple",
                     "container"=>"nav",
-                    "container_class"=>"site__footer__menu",
-                    "menu_class"=>"site__footer__menu__ul",
+                    "container_class"=>"site__footer__menu__nav",
+                    "menu_class"=>"site__footer__menu__nav__ul",
 
                     "link_before"=>$icone)); ?>
 

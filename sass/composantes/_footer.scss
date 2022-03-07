@@ -1,33 +1,101 @@
 .site__footer {
+  font-family: $font__titre;
+  background-color: $color__background-footer;
+  color: $color__font-footer;
+  padding: 15px;
+
+  &__colonne {
+    display: flex;
+    justify-content: space-between;
+    // .site__footer__colonne
+    section {
+      // .site__footer__colonne section
+      display: flex;
+      flex-direction: column;
+      border: 3px solid rgb(255, 0, 0);
+      flex: 0 0 30%;
+    }
+
+    .footer__adresse {
+      // .site__footer__colonne .footer__adresse
+
+    }
+
+    .footer__article {}
+
+    .footer__lien {}
+  }
+
+  &__ligne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    section {
+      padding: 10px;
+    }
+
+    .footer__description {}
+
+    .footer__auteur {}
+
+    .footer__copyright {}
+
+    .site__footer__menu {
+      &__nav{ // .site__footer__menu
+        &__ul{ // .site__footer__menu__ul
+            display : flex;
+            list-style-type: none;
+            justify-content: center;
+            .menu-item { // .site__footer__menu__ul .menu-item
+                margin : 10px 5px;
+              a{ // .site__footer__menu__ul .menu-item a
+                display : flex;
+                align-items: center;
+                padding : 3px;
+                  svg { // .site__footer__menu__ul .menu-item a svg
+                    color: $color__link__footer;
+                  }
+             
+                &:hover {
+                  svg { // .site__footer__menu__ul .menu-item a svg
+                    color: $color__link__footer-hover;
+                  }
+                }
+              }
+            }    
+         }
+      }
+    }
+
+    .footer_recherche {}
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.site__footer {
     font-family: $font__titre;
     background-color: $color__background-footer;
     padding: 15px;
 
-    &__menu{ // .site__footer__menu
-
-      &__ul{ // .site__footer__menu__ul
-          display : flex;
-          list-style-type: none;
-          justify-content: center;
-          .menu-item { // .site__footer__menu__ul .menu-item
-              margin : 10px 5px;
-            a{ // .site__footer__menu__ul .menu-item a
-              display : flex;
-              align-items: center;
-              padding : 3px;
-                svg { // .site__footer__menu__ul .menu-item a svg
-                  color: $color__link__footer;
-                }
-           
-              &:hover {
-                svg { // .site__footer__menu__ul .menu-item a svg
-                  color: $color__link__footer-hover;
-                }
-              }
-            }
-          }    
-       }
-    }
+    
     &__search{
       display: flex;
       justify-content: center;
@@ -54,3 +122,5 @@
   color: $color__font-footer;
   text-align: center;
 }
+
+*/
