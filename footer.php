@@ -1,13 +1,14 @@
 <footer class="site__footer">
     <div class="site__footer__colonne">
-        <section class="footer__adresse"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsum itaque, sequi beatae mollitia eveniet nesciunt recusandae dignissimos cupiditate officiis laboriosam numquam repudiandae, nisi, explicabo provident dicta aperiam aliquam perferendis. </section>
-        <section class="footer__article"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsum itaque, sequi beatae mollitia eveniet nesciunt recusandae dignissimos cupiditate officiis laboriosam numquam repudiandae, nisi, explicabo provident dicta aperiam aliquam perferendis. </section>
-        <section class="footer__lien"> <?php wp_nav_menu(array("menu"=>"Lien_externe",)); ?> </section>
+        <section class="footer__adresse"><?php get_sidebar( "pied_page_colonne_1" ); ?> </section>
+        <section class="footer__article"><?php get_sidebar( "pied_page_colonne_2" ); ?> </section>
+        <section class="footer__lien"> <?php get_sidebar( "pied_page_colonne_3" ); ?> </section>
     </div>
 
     <div class="site__footer__ligne">
     <section class="footer__description"> 4W4 Conception d'interface web et développement web</section>
     <section class="footer__copyright"> &copy; Collège de Maisonneuve - Tous droit réservé </section>
+    <section class="footer__sociaux"> <?php get_sidebar( "pied_page_ligne_1" ); ?> </section>
     <section class="footer__menu">
         <?php 
 
