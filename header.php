@@ -22,11 +22,12 @@
 
 
     <header class="site__header">
+        <?php the_custom_logo() ?>
         <h1 class=" header__titre">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                 <?php bloginfo('name'); ?></h1>
         </a>
-        <h2 class="header__description"> <?php get_sidebar( "haut_main_titre" ); ?></h2>
+        <h2 class="header__description"> <?php bloginfo('description'); ?></h2>
 
 
         <div class="util">

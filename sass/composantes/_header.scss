@@ -3,9 +3,22 @@
   color: $color__font-header;
   padding-left: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  @media screen and (min-width : 700px){
+    flex-direction: row;
+  }
+  &__titre{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
+.custom-logo-link, .header__titre, .util {
+  padding: 20px;
+}
+
 
 .header__titre {
   font-size: clamp(0.5rem, 3vw, 7rem);
