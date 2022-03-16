@@ -7,18 +7,18 @@ theme name: Lab 2 Lemieux Florence
     background-color: $color__background-body;
     font-family: $font__main;
 }
-
-.home ::after{
-    position:absolute;
+/* Permet */
+.home::after{
     content: "";
+    position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    background-color: rgba($color__background-body-clip, .5);
+    background-color: rgba($color__background-body-clip, .8);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 99%, 53% 54%);
     z-index: -1;
 }
 
@@ -62,9 +62,10 @@ theme name: Lab 2 Lemieux Florence
             "sidebar main"
             "footer footer";
     }
+    /* Permet de retirer la barre de menu principal dans la page d'accueil */
     .home {
         display: grid;
-        gap : 0px;
+        gap : 10px;
         grid-template-columns: auto;
         grid-template-areas:
             "sidebar"
