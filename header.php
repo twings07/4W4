@@ -23,18 +23,18 @@
 
     <header class="site__header">
         <?php the_custom_logo() ?>
-        <h1 class=" header__titre">
+        <h1 class="header__titre">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                 <?php bloginfo('name'); ?></h1>
         </a>
         <h2 class="header__description"> <?php bloginfo('description'); ?></h2>
 
-
         <div class="util">
             <div class="util__menu">
             <?php get_sidebar( "entete_1" ); ?>
-            </div>
+            
             <?php get_search_form() ?>
+            </div>
         </div>
     </header>
 
@@ -51,6 +51,9 @@
                     clip-rule="evenodd"></path>
             </svg>
         </label>
+        
         <?php wp_nav_menu(array("menu"=>"principal",
                             "container"=>"nav")); ?>
+
+        
     </section>

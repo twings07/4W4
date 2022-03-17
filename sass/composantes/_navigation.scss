@@ -12,6 +12,7 @@
 #chk-burger:checked ~ #burger {
     
     transform : rotate(90deg);
+    
 }
 .menu-principal-container {
     display : none;
@@ -48,6 +49,8 @@
     
     .home #burger {
         display : block;
+         
+        
     }
      .home .menu-principal-container {
         display : none;

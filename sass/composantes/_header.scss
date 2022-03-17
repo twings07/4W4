@@ -15,6 +15,7 @@
     align-items: center;
   }
 }
+
 .custom-logo-link, .header__titre, .util {
   padding: 20px;
 }
@@ -23,6 +24,7 @@
 .header__titre {
   font-size: clamp(0.5rem, 3vw, 7rem);
   font-family: $font__titre;
+  
 
 }
 
@@ -39,7 +41,7 @@
   
   &__menu {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     padding: 10px;
   }

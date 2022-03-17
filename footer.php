@@ -7,6 +7,7 @@
 
     <div class="site__footer__ligne">
     <section class="footer__description"> 4W4 Conception d'interface web et développement web</section>
+    <section class="footer__description"> 3 800, rue Sherbrooke Est Montréal (Québec) H1X 2A2</section>
     <section class="footer__copyright"> &copy; Collège de Maisonneuve - Tous droit réservé </section>
     <section class="footer__sociaux"> <?php get_sidebar( "pied_page_ligne_1" ); ?> </section>
     <section class="footer__menu">
