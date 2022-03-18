@@ -40,3 +40,57 @@
         transform : translateY(0);  
     }
 }
+//animation pour le titre de la page home
+.pagePrincipal__titre{
+    font-size: clamp(2.5rem, 3vw, 5rem);
+    animation: animationTitre 2s ease-in-out;
+}
+
+@keyframes animationTitre{
+    0%{
+        letter-spacing: 20px;
+    }
+    100%{
+        letter-spacing: 2px;
+    }
+}
+
+//animation header
+.header__description{
+    animation: animationHeaderDescription 2s ease-in-out;
+}
+
+@keyframes animationHeaderDescription{
+    0%{
+        transform: translateY(-150px);
+    }
+    25%{
+        transform: translateY(150px);
+    }
+    50%{
+        transform: translateY(-75px);
+    }
+    75%{
+        transform: translateY(75px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+// animation pour la page cours 
+.formation__titre{
+    animation: animationTitreCours 1s ease-in-out;
+}
+
+@keyframes animationTitreCours{
+    0%{
+        transform:scale(0);
+    }
+    50%{
+        transform:scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
