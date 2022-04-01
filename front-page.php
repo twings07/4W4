@@ -9,6 +9,10 @@
     <div class="animation__bloc">5</div>
 </section>
 
+<?php wp_nav_menu(array(
+        "menu"=> "menu_accueil",
+        "container" => "nav")); ?>
+
 <div class="pagePrincipal">
    <h1 class="pagePrincipal__titre"> Collège de Maisonneuve </h1>
 
