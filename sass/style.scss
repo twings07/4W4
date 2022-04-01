@@ -1,8 +1,8 @@
 /*
-theme name: TP1 Edward Twingstan
+theme name: Lab5 Edward Twingstan
 Author: Edward Twingstan
-Author URI: https://github.com/twings07/4W4/tree/tp1
-Description: TP1 réalisé dans le cours de conception d'interfaces et développement Web
+Author URI: 
+Description: Lab 5 réalisé dans le cours de conception d'interfaces et développement Web
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -26,6 +26,7 @@ INITIALISATION
 ÉLÉMENTS
 --------------------------------------------------------- */
 @import "elements/links";
+@import "elements/balises";
 
 /* ---------------------------------------------------------
 COMPOSANTES
@@ -33,10 +34,12 @@ COMPOSANTES
 @import "composantes/contenu";
 @import "composantes/header";
 @import "composantes/navigation";
+@import "composantes/navigation_categorie_cours";
 @import "composantes/footer";
 @import "composantes/erreur_404";
 @import "composantes/single-post";
 @import "composantes/recherche";
+@import "navigation_accueil;";
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
