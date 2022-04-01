@@ -6,6 +6,7 @@
             "menu"=>"categorie_cours",
             "container" => "nav"));  ?>
         <h2 class="formation__titre">Liste des cours du programme TIM</h2>
+        
         <?php 
         if (is_category('web')){ 
 

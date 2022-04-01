@@ -1,12 +1,12 @@
 /*
-theme name: Lab5 Edward Twingstan
+Theme Name: Lab 5 Edward Twingstan
 Author: Edward Twingstan
-Author URI: 
-Description: Lab 5 réalisé dans le cours de conception d'interfaces et développement Web
+Author URI: https://github.com/twings07/4W4/tree/lab5
+Description: Lab 5 réaliser dans le cours de 4W4
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: cidw-4w4hsl(17, 64%hsl(17, 64%, 44%)
+Text Domain: cidw-4w4
 
 */
 /* ---------------------------------------------------------
@@ -34,12 +34,12 @@ COMPOSANTES
 @import "composantes/contenu";
 @import "composantes/header";
 @import "composantes/navigation";
-@import "composantes/navigation_categorie_cours";
+@import "composantes/navigation-categorie-cours";
 @import "composantes/footer";
 @import "composantes/erreur_404";
 @import "composantes/single-post";
 @import "composantes/recherche";
-@import "navigation_accueil;";
+@import "composantes/navigation_accueil"; 
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */

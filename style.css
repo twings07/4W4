@@ -1,13 +1,13 @@
 @charset "UTF-8";
 /*
-theme name: Lab5 Edward Twingstan
+Theme Name: Lab 5 Edward Twingstan
 Author: Edward Twingstan
-Author URI: 
-Description: Lab 5 réalisé dans le cours de conception d'interfaces et développement Web
+Author URI: https://github.com/twings07/4W4/tree/lab5
+Description: Lab 5 réaliser dans le cours de 4W4
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: cidw-4w4hsl(17, 64%hsl(17, 64%, 44%)
+Text Domain: cidw-4w4
 
 */
 /* ---------------------------------------------------------
@@ -406,6 +406,50 @@ a:hover, a:active {
   outline: 0;
 }
 
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h3, h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+h1 {
+  font-size: clamp(2rem, 3vw, 5rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.2vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2vw, 2.6rem);
+}
+
+h4 {
+  font-size: clamp(1.1rem, 2vw, 2.5rem);
+}
+
+h5 {
+  font-size: clamp(1rem, 2vw, 2.2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+p {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -439,6 +483,10 @@ COMPOSANTES
 
 .formation__liste .jeu {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
+}
+
+.formation__liste .comm {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=users");
 }
 
 .formation__liste .design {
@@ -616,6 +664,7 @@ Navigation pour la page catégorie.php   bonton de catégorie
 ***********************************************************/
 .menu-categorie_cours-container .menu {
   display: flex;
+  list-style-type: none;
 }
 
 .menu-categorie_cours-container .menu .menu-item {
@@ -756,6 +805,21 @@ Navigation pour la page catégorie.php   bonton de catégorie
 .recherche__submit {
   border: none;
   background-color: rgba(255, 255, 255, 0);
+}
+
+.menu-accueil-container .menu {
+  display: flex;
+}
+
+.menu-accueil-container .menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 0 15px;
+}
+
+.menu-accueil-container .menu .menu-item a {
+  text-decoration: none;
 }
 
 /* ---------------------------------------------------------
