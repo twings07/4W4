@@ -7,6 +7,7 @@
 }
 
 .formation {
+    padding: 10px 15px;
     display: flex;
     flex-direction: column;
 
@@ -24,7 +25,7 @@
         }
         .jeu{
             background-image: url('https://s2.svgbox.net/materialui.svg?ic=games');
-
+            
         }
         .comm {
             background-image: url('https://s2.svgbox.net/octicons.svg?ic=users');
@@ -47,11 +48,10 @@
         }
         .creation-3d {
             background-image: url('https://s2.svgbox.net/materialui.svg?ic=view_in_ar');
-
+            
         }
 
     }
-    
     &__cours {
         background-repeat: no-repeat;
         background-position: 97% 3%;

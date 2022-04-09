@@ -5,7 +5,7 @@
  * 
  * Permet d'afficher les resultats d'une recherche
  * 
- * @link https://developer.wordpress.org/themes
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  * 
  * 
  * 

@@ -1,8 +1,8 @@
 /*
-Theme Name: Lab 5 Edward Twingstan
+Theme Name: Exercise 3 Edward Twingstan
 Author: Edward Twingstan
 Author URI: https://github.com/twings07/4W4/tree/lab5
-Description: Lab 5 réaliser dans le cours de 4W4
+Description: Exercise 3 réaliser dans le cours de 4W4
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -34,12 +34,13 @@ COMPOSANTES
 @import "composantes/contenu";
 @import "composantes/header";
 @import "composantes/navigation";
+@import "composantes/navigation_accueil"; 
 @import "composantes/navigation-categorie-cours";
 @import "composantes/footer";
 @import "composantes/erreur_404";
 @import "composantes/single-post";
 @import "composantes/recherche";
-@import "composantes/navigation_accueil"; 
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */

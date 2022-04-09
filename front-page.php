@@ -12,7 +12,7 @@
 <?php wp_nav_menu(array(
         "menu"=> "menu_accueil",
         "container" => "nav")); ?>
-
+<h1>---- Front-page.php ------</h1>
 <div class="pagePrincipal">
    <h1 class="pagePrincipal__titre"> Collège de Maisonneuve </h1>
 

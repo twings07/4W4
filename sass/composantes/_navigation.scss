@@ -1,67 +1,72 @@
-
 #burger {
-    position : absolute;
-    transition : transform .3s;
-    transform : rotate(0);
+    position: absolute;
+    transition: transform .3s;
+    transform: rotate(0);
 }
-#chk-burger{
+
+#chk-burger {
 
     display: none;
 }
 
-#chk-burger:checked ~ #burger {
-    
-    transform : rotate(90deg);
-    
+#chk-burger:checked~#burger {
+
+    transform: rotate(90deg);
+
 }
+
 .menu-principal-container {
-    display : none;
+    display: none;
 }
-#chk-burger:checked ~ .menu-principal-container{
-    display : block;
+
+#chk-burger:checked~.menu-principal-container {
+    display: block;
 }
-.menu{
-    list-style-type: none;
-    margin : 0;
-    padding :0;
-}
-.menu-item{
-    margin:0;
-    padding : 0;
-    a{
-        display : block;
-        text-decoration: none;
-        padding : 4px;
-        background-color: $color__background-link;
-        &:hover {
-            background-color: $color__background-link-hover;
+
+.menu-principal-container {
+    padding: 30px 0 0 0;
+    background-color: $color__background-link;
+
+    .menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-item {
+        margin: 0;
+        padding: 0;
+
+        a {
+            display: block;
+            text-decoration: none;
+            padding: 4px;
+            background-color: $color__background-link;
+
+            &:hover {
+                background-color: $color__background-link-hover;
+            }
         }
     }
 }
 
-@media screen and (min-width : $largeur__media--tablette){
+@media screen and (min-width : $largeur__media--tablette) {
     .site #burger {
-        display : none;
+        display: none;
     }
-     .site .menu-principal-container {
-        display : block;
+
+    .site .menu-principal-container {
+        display: block;
     }
-    
+
     .home #burger {
-        display : block;
-         
-        
+        display: block;
+
+
     }
-     .home .menu-principal-container {
-        display : none;
+
+    .home .menu-principal-container {
+        display: none;
     }
 
 }
-
-
-
-
-
-
-
-

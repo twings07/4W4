@@ -12,6 +12,7 @@
         background-color: rgba(251, 168, 13, 0.876);
         color : #fff;
         font-size: 3rem;
+        transform: translateY(-100vh);
        // animation : anim-entete 1s forwards;
          &:nth-of-type(1){
             animation: anim-entete 1s 0s forwards;
