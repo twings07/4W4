@@ -1,18 +1,14 @@
 <?php get_header() ?>
 <main class="site__main">
-
-<section class="animation">
-    <div class="animation__bloc">1</div>
-    <div class="animation__bloc">2</div>
-    <div class="animation__bloc">3</div>
-    <div class="animation__bloc">4</div>
-    <div class="animation__bloc">5</div>
-</section>
-
+<h2>Le département TIM</h2>
 <?php wp_nav_menu(array(
-        "menu"=> "menu_accueil",
+        "menu"=> "accueil",
         "container" => "nav")); ?>
-<h1>---- Front-page.php ------</h1>
+<h2>Les événements de l'année</h2>
+<?php wp_nav_menu(array(
+        "menu"=> "evenement",
+        "container" => "nav")); ?>
+        
 <div class="pagePrincipal">
    <h1 class="pagePrincipal__titre"> Collège de Maisonneuve </h1>
 

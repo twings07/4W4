@@ -4,11 +4,16 @@
     <section class="formation">
 
     <?php $url_categorie_slug = trouve_la_categorie(array('cours','web','jeu','design', 'utilitaire', 'creation-3d', 'video')); ?>
+
     <a href="<?= esc_url( home_url( '/' ));  ?>/category/<?= $url_categorie_slug ?>/?cletri=title&ordre=asc">Ascendant</a><br>
     <a href="<?= esc_url( home_url( '/' ));  ?>/category/<?= $url_categorie_slug ?>/?cletri=title&ordre=desc">Descendant</a><br>
+    
+    <?php 
+        $ordre = get_query_var('ordre', 'asc');
+    ?>
+    <a href="?cletri=title&ordre=asc">Ascendant</a>
+    <a href="?cletri=title&ordre=desc">Descendant</a>
 
-    <a href="?cletri=title&ordre=asc">Ascendant</a><br>
-    <a href="?cletri=title&ordre=desc">Descendant</a><br>
 
     <?php  wp_nav_menu(array(
             "menu"=>"categorie_cours",
