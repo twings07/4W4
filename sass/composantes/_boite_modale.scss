@@ -6,4 +6,10 @@
     left:25%;
     border: 5px solid rgb(182, 0, 0);
     background-color: rgba(63, 105, 231, 0.486);
+    transform: scale(.1);
+    transition: all 2s ease-in-out;
+    
+    &:hover{
+        transform: scale(1);
+    }
 }

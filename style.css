@@ -902,6 +902,12 @@ Navigation pour la page catégorie.php   bonton de catégorie
   left: 25%;
   border: 5px solid #b60000;
   background-color: rgba(63, 105, 231, 0.486);
+  transform: scale(0.1);
+  transition: all 2s ease-in-out;
+}
+
+.boite__modale:hover {
+  transform: scale(1);
 }
 
 /* ---------------------------------------------------------
