@@ -28,6 +28,13 @@
     <section class="footer__auteur"> Auteur: Edward Twingstan </section>
     </div>
 </footer>
+
+<div class="boite__modale">
+
+    <p class="boite__modale__text"> Ceci est un test pour vérifier le fonctionnement de la boite modale. </p>
+
+</div>
+
 <?php  wp_footer(); ?>
 </body>
 

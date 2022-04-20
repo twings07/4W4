@@ -18,7 +18,11 @@ get_header();
      <p class="evenement__date"> <?php the_field('date'); ?> </p>
      <p class="evenement__heure"> <?php the_field('heure'); ?> </p>
      <p class="evenement__organisateur"> <?php the_field('organisateur'); ?> </p>
-     <p class="evenement__image"> <?php the_field('image'); ?> </p>
+     <?php 
+     $image = get_field('image');
+     if( !empty( $image ) ): ?>
+     <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+<?php endif; ?>
      <p class="evenement__resume"> <?php the_field('resume'); ?> </p>
      <?php endif ?>
 </article>

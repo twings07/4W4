@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
-Theme Name: Exercise 4 Edward Twingstan
+Theme Name: Lab 6 Edward Twingstan
 Author: Edward Twingstan
 Author URI: https://github.com/twings07/4W4/tree/exer3
-Description: Exercise 4 réaliser dans le cours de 4W4
+Description: Lab 6 réaliser dans le cours de 4W4
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -892,6 +892,16 @@ Navigation pour la page catégorie.php   bonton de catégorie
 .recherche__submit {
   border: none;
   background-color: rgba(255, 255, 255, 0);
+}
+
+.boite__modale {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  left: 25%;
+  border: 5px solid #b60000;
+  background-color: rgba(63, 105, 231, 0.486);
 }
 
 /* ---------------------------------------------------------
