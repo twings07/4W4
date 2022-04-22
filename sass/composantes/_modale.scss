@@ -1,0 +1,29 @@
+.boite__modale{
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left:25%;
+    border: 5px solid rgb(182, 0, 0);
+    background-color: rgb(48, 72, 210);
+    transform: scale(0);
+    transition: all 2s ease-in-out;
+    
+    &--ouvrir{
+        transform: scale(1);
+    }
+    &--fermer{
+        transform: scale(0);
+    }
+    &__bouton{
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px;
+        
+        
+    }
+    &__svg{
+        background-color: rgba(47, 46, 46, 0.514);
+        border: none;
+    }
+}

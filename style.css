@@ -2,7 +2,7 @@
 /*
 Theme Name: Lab 6 Edward Twingstan
 Author: Edward Twingstan
-Author URI: https://github.com/twings07/4W4/tree/exer3
+Author URI: https://github.com/twings07/4W4/tree/exer4
 Description: Lab 6 réaliser dans le cours de 4W4
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -894,20 +894,47 @@ Navigation pour la page catégorie.php   bonton de catégorie
   background-color: rgba(255, 255, 255, 0);
 }
 
+.evenement {
+  background-color: #410202;
+}
+
+.evenement__organisateur {
+  background-color: #888dda;
+}
+
+.evenement__resume {
+  background-color: #e99898;
+}
+
 .boite__modale {
-  position: absolute;
+  position: fixed;
   width: 50%;
   height: 50%;
   top: 25%;
   left: 25%;
   border: 5px solid #b60000;
-  background-color: rgba(63, 105, 231, 0.486);
-  transform: scale(0.1);
+  background-color: #3048d2;
+  transform: scale(0);
   transition: all 2s ease-in-out;
 }
 
-.boite__modale:hover {
+.boite__modale--ouvrir {
   transform: scale(1);
+}
+
+.boite__modale--fermer {
+  transform: scale(0);
+}
+
+.boite__modale__bouton {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.boite__modale__svg {
+  background-color: rgba(47, 46, 46, 0.514);
+  border: none;
 }
 
 /* ---------------------------------------------------------
