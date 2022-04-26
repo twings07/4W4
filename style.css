@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
-Theme Name: Lab 6 Edward Twingstan
+Theme Name: Lab 7 Edward Twingstan
 Author: Edward Twingstan
 Author URI: https://github.com/twings07/4W4/tree/exer4
-Description: Lab 6 réaliser dans le cours de 4W4
+Description: Lab 7 réaliser dans le cours de 4W4
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -535,6 +535,10 @@ COMPOSANTES
   font-size: 1.5rem;
   color: #900303;
   margin: 5px 0px;
+}
+
+.cours__invisible {
+  display: none;
 }
 
 .cours__sigle {
