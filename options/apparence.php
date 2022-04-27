@@ -62,4 +62,4 @@
         "section"=>"modifier_background_body",
         "label"=>"Couleur du background du clip-path"]));
 });
-?> 
+?>
