@@ -114,3 +114,33 @@
     }
     
 }
+@media screen and (max-width :$largeur__media--mobil)
+{
+    .boite__modale{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left:0;
+    }
+    .boite__carrousel{
+    width: 100%;
+    height: 50%;
+    top: 25%;
+    left:0;
+
+    &__navigation{
+        width: 100%;
+    }
+    }
+}
+@media screen and (max-width :1400px)
+{
+    
+    .boite__carrousel{
+
+        &__navigation{
+            
+            width: 100%;
+    }
+    }
+}

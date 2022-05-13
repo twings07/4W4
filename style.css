@@ -1022,6 +1022,30 @@ Navigation pour la page catégorie.php   bonton de catégorie
   object-fit: cover;
 }
 
+@media screen and (max-width: 500px) {
+  .boite__modale {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .boite__carrousel {
+    width: 100%;
+    height: 50%;
+    top: 25%;
+    left: 0;
+  }
+  .boite__carrousel__navigation {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .boite__carrousel__navigation {
+    width: 100%;
+  }
+}
+
 .galerie {
   width: 100%;
 }
