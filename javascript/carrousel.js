@@ -3,7 +3,7 @@
     let boite__carrousel = document.querySelector(".boite__carrousel");
     let galerie__img = document.querySelectorAll('.galerie  img');
     console.log("galerie__img.length = " + galerie__img.length)
-    let boite__carrousel__ferme = document.querySelector(".boite__carrousel__bouton")
+    let boite__carrousel__ferme = document.querySelector(".boite__carrousel__ferme")
     let boite__carrousel__navigation = document.querySelector(".boite__carrousel__navigation")
     
     

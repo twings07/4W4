@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
-Theme Name: Exercise 4 Edward Twingstan
+Theme Name: TP2 Edward Twingstan
 Author: Edward Twingstan
 Author URI: https://github.com/twings07/4W4/tree/exer4
-Description: Exercise 4 réaliser dans le cours de 4W4
+Description: TP2 réaliser dans le cours de 4W4
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -907,8 +907,8 @@ Navigation pour la page catégorie.php   bonton de catégorie
 
 .boite__modale, .boite__carrousel {
   position: fixed;
-  border: 5px solid #b60000;
-  background-color: #3048d2;
+  border: 5px solid #aa0101;
+  background-color: rgba(199, 98, 15, 0.966);
   transform: scale(0);
   transition: all 1.5s ease-in-out;
 }
@@ -946,6 +946,8 @@ Navigation pour la page catégorie.php   bonton de catégorie
 
 .boite__modale__texte {
   overflow: hidden;
+  text-align: justify;
+  padding: 15px;
 }
 
 .boite__modale__bouton {
@@ -962,31 +964,53 @@ Navigation pour la page catégorie.php   bonton de catégorie
   left: 12.5%;
 }
 
+.boite__carrousel__ferme {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.637);
+  border: 1px solid #ff9100;
+  border-radius: 30px;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
 .boite__carrousel__svg {
   background-color: rgba(47, 46, 46, 0.514);
+  text-align: center;
   border: none;
 }
 
 .boite__carrousel__navigation {
   position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
   display: flex;
   justify-content: center;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  border: 2px solid greenyellow;
+  width: 35%;
+  background-color: rgba(0, 0, 0, 0.603);
+  border: 2px solid #ff9100;
+  border-radius: 50px;
   z-index: 1;
 }
 
 .boite__carrousel__navigation button {
+  top: 10px;
+  right: 10px;
   width: 20px;
   height: 20px;
   margin: 10px 15px;
+  background-color: black;
   border-radius: 100%;
+  border: 2px solid red;
+  z-index: 1;
 }
 
 .boite__carrousel__navigation button:focus {
-  background-color: black;
+  background-color: #ff9100;
 }
 
 .boite__carrousel__img {
