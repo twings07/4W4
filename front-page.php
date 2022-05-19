@@ -8,6 +8,12 @@
 <?php wp_nav_menu(array(
         "menu"=> "evenement",
         "container" => "nav")); ?>
+
+<h2>Les ateliers à venir</h2>
+<?php wp_nav_menu(array(
+        "menu"=> "atelier",
+        "container" => "nav")); ?>
+
         
 <div class="pagePrincipal">
    <h1 class="pagePrincipal__titre"> Collège de Maisonneuve </h1>
