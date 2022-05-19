@@ -2,7 +2,7 @@
 /*
 Theme Name: Epreuve Finale Edward Twingstan
 Author: Edward Twingstan
-Author URI: https://github.com/twings07/4W4/tree/exer4
+Author URI: https://github.com/twings07/4W4/tree/epreuve-finale
 Description: Epreuve finale réaliser dans le cours de 4W4
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -1074,6 +1074,10 @@ Navigation pour la page catégorie.php   bonton de catégorie
 
 .home .site__main {
   align-items: center;
+}
+
+.atelier {
+  padding: 20px;
 }
 
 /* ---------------------------------------------------------
