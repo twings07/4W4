@@ -1,9 +1,11 @@
 <?php get_header() ?>
 <main class="site__main">
+
 <h2>Le département TIM</h2>
 <?php wp_nav_menu(array(
         "menu"=> "accueil",
         "container" => "nav")); ?>
+
 <h2>Les événements de l'année</h2>
 <?php wp_nav_menu(array(
         "menu"=> "evenement",

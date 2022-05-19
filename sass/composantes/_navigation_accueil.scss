@@ -1,4 +1,4 @@
-.menu-accueil-container,.menu-evenement-container {
+.menu-accueil-container,.menu-evenement-container,.menu-atelier-container {
     // nav
 
     .menu {
@@ -35,6 +35,8 @@
         .accueil__projet .menu-item-icone{
             background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
         }
+
+        //MENU ATELIER
         .menu-item {
             //li
             display : flex;
